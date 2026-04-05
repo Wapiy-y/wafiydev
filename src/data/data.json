@@ -1,0 +1,55 @@
+{
+	"hero": {
+		"name": "Wafiy",
+		"avatar": "https://i.ibb.co/k6xDtqF9/profile.jpg",
+		"tagline": "Hi, I go by Wafiy!",
+		"available": true,
+		"availabilityText": "Open to opportunities",
+		"bio": "Junior Software Engineer with 1.5 years building production-grade full-stack apps, focused on backend and microservices. I enjoy shipping clean, reliable software — from REST APIs to real-time AI systems.",
+		"github": "https://github.com/Wapiy-y",
+		"linkedin": "https://www.linkedin.com/in/abdullahwafiy/"
+	},
+	"techStack": [
+		{ "name": "TypeScript", "category": "Language" },
+		{ "name": "Go", "category": "Language" },
+		{ "name": "React", "category": "Frontend" },
+		{ "name": "Tailwind CSS", "category": "Frontend" },
+		{ "name": "Node.js", "category": "Backend" },
+		{ "name": "Express.js", "category": "Backend" },
+		{ "name": "PostgreSQL", "category": "Database" },
+		{ "name": "Redis", "category": "Database" },
+		{ "name": "Docker", "category": "DevOps" },
+		{ "name": "Kubernetes", "category": "DevOps" }
+	],
+	"experiences": [
+		{
+			"company": "Revolab Sdn Bhd",
+			"role": "Junior Software Engineer",
+			"period": "APR 2025 - PRESENT",
+			"description": "Building production microservices for AI-powered conversational platforms — real-time chat widgets with WebRTC, enterprise AI with SSE streaming and GCP Pub/Sub, and distributed tracing via OpenTelemetry.",
+			"tags": ["TypeScript", "Go", "gRPC", "GCP", "OpenTelemetry", "Kubernetes"]
+		},
+		{
+			"company": "Agtiv Consulting Sdn Bhd",
+			"role": "Full-Stack Developer Intern",
+			"period": "SEPT 2024 - FEB 2025",
+			"description": "Built internal modules for an EPC client's Management of Change system and contributed to a document management migration from EDMS to EDCS.",
+			"tags": ["ASP.NET", "C#", "SharePoint"]
+		}
+	],
+	"projects": [
+		{
+			"title": "Bilku",
+			"description": "Personal bill and financial commitment tracker with PWA support for mobile access.",
+			"tags": ["React", "TypeScript", "PostgreSQL", "Netlify"],
+			"inDevelopment": false
+		},
+		{
+			"title": "Family Management System",
+			"description": "Final year project — a collaborative family management web app with JWT auth and priority-based alerts via scheduled Cron jobs.",
+			"tags": ["React", "Express.js", "JWT", "Render"],
+			"inDevelopment": false
+		}
+	],
+	"blogs": []
+}

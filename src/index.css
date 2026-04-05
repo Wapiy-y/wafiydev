@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+	--color-brand-primary: #3b82f6;
+	--color-brand-secondary: #10b981;
+	--color-brand-accent: #f59e0b;
+}
+
+html {
+	scrollbar-gutter: stable;
+}
+
+body {
+	background-color: #f5f5f5;
+	color: #111111;
+	font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.dark body {
+	background-color: #0a0a0a;
+	color: #e5e5e5;
+}
+
+@utility section-padding {
+	@apply py-16 px-6 md:px-12 lg:px-64 xl:px-[25%];
+}
+
+@utility experience-card {
+	@apply p-4 rounded-xl border border-black/5 bg-black/[0.02] hover:bg-black/[0.04] dark:border-white/5 dark:bg-white/[0.02] dark:hover:bg-white/[0.04] transition-colors;
+}
+
+@utility project-card {
+	@apply p-4 rounded-2xl border border-black/5 bg-black/[0.02] hover:bg-black/[0.04] dark:border-white/5 dark:bg-white/[0.02] dark:hover:bg-white/[0.04] transition-colors;
+}
+
+@utility tag {
+	@apply px-3 py-1 rounded-lg bg-black/[0.05] border border-black/10 text-[11px] font-medium text-black/60 dark:bg-white/[0.05] dark:border-white/10 dark:text-white/60;
+}
+
+.text-muted {
+	@apply text-black/50 dark:text-white/50;
+}
+
+.section-title {
+	@apply text-[10px] font-bold tracking-[0.2em] text-black/30 dark:text-white/30 uppercase mb-4;
+}
