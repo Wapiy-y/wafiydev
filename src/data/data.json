@@ -25,7 +25,7 @@
 			"company": "Revolab Sdn Bhd",
 			"role": "Junior Software Engineer",
 			"period": "APR 2025 - PRESENT",
-			"description": "Building production microservices for AI-powered conversational platforms — real-time chat widgets with WebRTC, enterprise AI with SSE streaming and GCP Pub/Sub, and distributed tracing via OpenTelemetry.",
+			"description": "Building production microservices for AI-powered conversational agent",
 			"tags": ["TypeScript", "Go", "gRPC", "GCP", "OpenTelemetry"]
 		},
 		{
