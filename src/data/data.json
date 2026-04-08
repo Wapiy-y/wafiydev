@@ -42,13 +42,8 @@
 			"title": "Bilku",
 			"description": "Personal bill and financial commitment tracker with PWA support for mobile access.",
 			"tags": ["React", "TypeScript", "PostgreSQL", "Netlify"],
-			"inDevelopment": false
-		},
-		{
-			"title": "Family Management System",
-			"description": "Final year project — a collaborative family management web app with JWT auth and priority-based alerts via scheduled Cron jobs.",
-			"tags": ["React", "Express.js", "JWT", "Render"],
-			"inDevelopment": false
+			"inDevelopment": false,
+			"url": "https://bilku.wafiydev.site/"
 		}
 	],
 	"blogs": []
