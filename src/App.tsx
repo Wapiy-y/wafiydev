@@ -7,12 +7,14 @@ import { HomePage } from "./pages/HomePage";
 export default function App() {
 	return (
 		<BrowserRouter>
-			<div className="min-h-screen font-sans selection:bg-black/10 dark:selection:bg-white/10">
+			<div className="min-h-screen font-sans flex flex-col">
 				<Navbar />
-				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/blog" element={<BlogPage />} />
-				</Routes>
+				<div className="flex-1">
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/blog" element={<BlogPage />} />
+					</Routes>
+				</div>
 				<Footer />
 			</div>
 		</BrowserRouter>

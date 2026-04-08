@@ -1,52 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 @import "tailwindcss";
-
-@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
 	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
 
-	--color-brand-primary: #3b82f6;
-	--color-brand-secondary: #10b981;
-	--color-brand-accent: #f59e0b;
+:root {
+	/* Black palette */
+	--c-bg: #0c0c0c;
+	--c-mantle: #111111;
+	--c-crust: #080808;
+	--c-surface0: #1a1a1a;
+	--c-surface1: #262626;
+	--c-overlay: #555555;
+	--c-text: #e5e5e5;
+	--c-subtext0: #999999;
+	--c-subtext1: #bbbbbb;
+
+	/* Syntax highlighting */
+	--c-comment: #4d9375;
+	--c-keyword: #5a9fd4;
+	--c-string: #c98a5e;
+	--c-function: #c9b86c;
+	--c-type: #3dab8e;
+	--c-number: #8fbf7f;
+
+	/* Go brand + VS Code status bar */
+	--c-go: #00add8;
+	--c-statusbar: #007acc;
 }
 
 html {
 	scrollbar-gutter: stable;
+	scrollbar-color: var(--c-surface0) var(--c-crust);
+}
+
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+*::-webkit-scrollbar-track {
+	background: var(--c-crust);
+}
+*::-webkit-scrollbar-thumb {
+	background: var(--c-surface0);
+	border-radius: 2px;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: var(--c-surface1);
 }
 
 body {
-	background-color: #f5f5f5;
-	color: #111111;
+	background-color: var(--c-bg);
+	color: var(--c-text);
 	font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
-.dark body {
-	background-color: #0a0a0a;
-	color: #e5e5e5;
+::selection {
+	background: rgba(90, 159, 212, 0.25);
+	color: var(--c-text);
 }
 
-@utility section-padding {
-	@apply py-16 px-6 md:px-12 lg:px-64 xl:px-[25%];
+/* ── Editor layout ── */
+.editor-gutter {
+	@apply hidden lg:flex flex-col items-end pt-1 select-none shrink-0;
+	width: 3rem;
+	color: var(--c-surface1);
+	font-family: var(--font-mono);
+	font-size: 12px;
+	line-height: 1.75rem;
+	border-right: 1px solid var(--c-surface0);
+	padding-right: 1rem;
 }
 
-@utility experience-card {
-	@apply p-4 rounded-xl border border-black/5 bg-black/[0.02] hover:bg-black/[0.04] dark:border-white/5 dark:bg-white/[0.02] dark:hover:bg-white/[0.04] transition-colors;
+.editor-content {
+	@apply flex-1 min-w-0 py-10 px-6 md:px-12;
 }
 
-@utility project-card {
-	@apply p-4 rounded-2xl border border-black/5 bg-black/[0.02] hover:bg-black/[0.04] dark:border-white/5 dark:bg-white/[0.02] dark:hover:bg-white/[0.04] transition-colors;
+/* ── Reusable components ── */
+.ide-card {
+	border: 1px solid var(--c-surface0);
+	background: var(--c-mantle);
+	border-radius: 6px;
+	transition: border-color 150ms;
+}
+.ide-card:hover {
+	border-color: var(--c-surface1);
 }
 
-@utility tag {
-	@apply px-3 py-1 rounded-lg bg-black/[0.05] border border-black/10 text-[11px] font-medium text-black/60 dark:bg-white/[0.05] dark:border-white/10 dark:text-white/60;
+.code-tag {
+	font-family: var(--font-mono);
+	font-size: 11px;
+	padding: 2px 8px;
+	border-radius: 3px;
+	background: var(--c-surface0);
+	color: var(--c-subtext0);
+	border: 1px solid var(--c-surface1);
 }
 
-.text-muted {
-	@apply text-black/50 dark:text-white/50;
-}
-
-.section-title {
-	@apply text-[10px] font-bold tracking-[0.2em] text-black/30 dark:text-white/30 uppercase mb-4;
+.section-comment {
+	font-family: var(--font-mono);
+	font-size: 12px;
+	color: var(--c-comment);
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }
