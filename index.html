@@ -4,11 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wafiydev</title>
+    <meta
+      name="description"
+      content="Wafiy — junior software engineer building production-grade full-stack apps, focused on backend and microservices."
+    />
+    <meta name="theme-color" content="#08090a" />
+    <meta property="og:title" content="wafiydev — software engineer" />
+    <meta
+      property="og:description"
+      content="Junior software engineer building production-grade full-stack apps, focused on backend and microservices."
+    />
+    <meta property="og:type" content="website" />
+    <title>wafiydev — Wafiy, software engineer</title>
     <script>
       (() => {
-        var t = localStorage.getItem("theme") || "dark";
-        document.documentElement.classList.add(t);
+        try {
+          const stored = localStorage.getItem("theme");
+          document.documentElement.classList.add(
+            stored === "light" ? "light" : "dark",
+          );
+        } catch {
+          document.documentElement.classList.add("dark");
+        }
       })();
     </script>
   </head>

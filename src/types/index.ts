@@ -2,6 +2,9 @@ export interface Hero {
 	name: string;
 	avatar: string;
 	tagline: string;
+	role: string;
+	location: string;
+	years: string;
 	available: boolean;
 	availabilityText: string;
 	bio: string;
