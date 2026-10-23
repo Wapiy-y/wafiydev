@@ -27,16 +27,13 @@ export const Skills = () => {
 	return (
 		<Section id="skills" title="Skills">
 			<Reveal>
-				<div className="space-y-4">
+				<div className="space-y-6">
 					{groups.map(([category, items]) => (
-						<div
-							key={category}
-							className="grid gap-2 sm:grid-cols-[110px_minmax(0,1fr)] sm:items-baseline sm:gap-6"
-						>
-							<p className="text-[12px] tracking-[0.06em] text-soft uppercase">
+						<div key={category}>
+							<p className="text-[11.5px] tracking-[0.08em] text-soft uppercase">
 								{category}
 							</p>
-							<div className="flex flex-wrap gap-1.5">
+							<div className="mt-2.5 flex flex-wrap justify-center gap-1.5">
 								{items.map((tech) => (
 									<span key={tech.name} className="chip">
 										{tech.name}

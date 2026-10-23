@@ -16,24 +16,29 @@ export const Projects = () => (
 								href={href}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="group flex items-start justify-between gap-6 py-5"
+								className="group block py-6"
 							>
-								<div className="min-w-0">
-									<p className="flex items-center gap-2 text-[15.5px] font-semibold text-ink">
-										{project.title}
-										{project.inDevelopment && (
-											<span className="chip text-[11px]">WIP</span>
-										)}
-									</p>
-									<p className="mt-1.5 text-[13.5px] leading-relaxed text-body">
-										{project.description}
-									</p>
-									<p className="mt-2 text-[12px] text-soft">
-										{project.tags.join(" · ")}
-									</p>
-								</div>
+								<p className="text-[15.5px] font-semibold text-ink">
+									{project.title}
+									{project.inDevelopment && (
+										<span className="chip ml-2 align-middle text-[11px]">
+											WIP
+										</span>
+									)}
+								</p>
 
-								<ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-soft transition-colors group-hover:text-accent" />
+								<p className="mx-auto mt-1.5 max-w-[52ch] text-[13.5px] leading-relaxed text-body">
+									{project.description}
+								</p>
+
+								<p className="mt-2 text-[12px] text-soft">
+									{project.tags.join(" · ")}
+								</p>
+
+								<p className="mt-3 inline-flex items-center gap-1.5 text-[12.5px] font-medium text-accent">
+									Visit
+									<ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+								</p>
 							</a>
 						</Reveal>
 					</li>

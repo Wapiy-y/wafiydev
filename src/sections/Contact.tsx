@@ -4,17 +4,20 @@ import { Reveal } from "../components/Reveal";
 import { HERO } from "../data";
 
 export const Contact = () => (
-	<section id="contact" className="shell scroll-mt-24 pb-20 sm:pb-28">
+	<section
+		id="contact"
+		className="shell scroll-mt-24 pb-20 text-center sm:pb-28"
+	>
 		<Reveal>
 			<h2 className="text-[clamp(1.45rem,3.1vw,1.875rem)] font-extrabold tracking-[-0.03em] text-ink">
 				Let&apos;s talk
 			</h2>
 
-			<p className="mt-4 max-w-[46ch] text-[15px] leading-7 text-body">
+			<p className="mx-auto mt-4 max-w-[44ch] text-[15px] leading-7 text-body">
 				Open to backend and full-stack roles. Email is best.
 			</p>
 
-			<div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+			<div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
 				<a
 					href={`mailto:${HERO.email}`}
 					className="inline-flex h-11 items-center gap-2 rounded-xl bg-ink px-5 text-[14px] font-medium text-white transition-opacity hover:opacity-90"
