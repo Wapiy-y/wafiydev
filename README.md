@@ -2,8 +2,8 @@
 
 Personal portfolio for **Wafiy** — junior software engineer, backend & microservices.
 
-A single-page site: one scrollable view with in-page navigation, a dark/light
-theme and layouts tuned from 320px phones up to wide desktops.
+A single-page site: one scrollable view with in-page navigation, a light,
+typography-led layout tuned from 320px phones up to wide desktops.
 
 ## Stack
 
@@ -34,9 +34,9 @@ npm run dev      # http://localhost:5173
 
 ```
 src/
-  sections/     # Hero, Stack (skills), Experience (work + education), Projects, Contact
+  sections/     # Hero, Experience, Projects, Skills, Education, Contact
   components/   # Header, Footer, Section, Reveal
-  hooks/        # theme, scroll spy, scroll progress
+  hooks/        # scroll spy
   data/         # data.json — all copy and content lives here
   types/        # content types
 ```

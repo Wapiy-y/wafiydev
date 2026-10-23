@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 /** Highlights the nav item for the section currently filling the viewport. */
 export const useScrollSpy = (ids: readonly string[]) => {
-	const [active, setActive] = useState(ids[0] ?? "");
+	const [active, setActive] = useState("");
 
 	useEffect(() => {
 		const sections = ids

@@ -1,10 +1,11 @@
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Contact } from "./sections/Contact";
+import { Education } from "./sections/Education";
 import { Experience } from "./sections/Experience";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
-import { Stack } from "./sections/Stack";
+import { Skills } from "./sections/Skills";
 
 export default function App() {
 	return (
@@ -13,15 +14,14 @@ export default function App() {
 				Skip to content
 			</a>
 
-			<div aria-hidden="true" className="site-grid" />
-
 			<Header />
 
-			<main id="main" className="relative z-10">
+			<main id="main">
 				<Hero />
-				<Stack />
 				<Experience />
 				<Projects />
+				<Skills />
+				<Education />
 				<Contact />
 			</main>
 
