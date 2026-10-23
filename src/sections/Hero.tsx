@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Mail, MapPin } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { Reveal } from "../components/Reveal";
 import { EXPERIENCES, HERO, TECH_STACK } from "../data";
@@ -10,7 +10,7 @@ const stats = [
 ];
 
 const socialLink =
-	"flex items-center justify-between rounded-lg border border-line bg-card-hi/40 px-3 py-2.5 text-[13px] text-muted transition-colors hover:border-accent-line hover:text-fg";
+	"flex items-center justify-between gap-3 rounded-lg border border-line bg-card-hi/40 px-3 py-2.5 text-[13px] text-muted transition-colors hover:border-accent-line hover:text-fg";
 
 const ProfileCard = () => (
 	<div className="relative mx-auto w-full max-w-[440px] lg:mx-0 lg:max-w-none">
@@ -41,7 +41,7 @@ const ProfileCard = () => (
 							{HERO.name}
 						</p>
 						<p className="mt-0.5 truncate text-[12.5px] text-muted">
-							Backend · Microservices
+							Backend &amp; full-stack
 						</p>
 					</div>
 				</div>
@@ -63,6 +63,13 @@ const ProfileCard = () => (
 				</dl>
 
 				<div className="mt-4 space-y-2">
+					<a href={`mailto:${HERO.email}`} className={socialLink}>
+						<span className="flex min-w-0 items-center gap-2.5">
+							<Mail className="h-4 w-4 shrink-0" />
+							<span className="truncate">{HERO.email}</span>
+						</span>
+						<ArrowUpRight className="h-3.5 w-3.5 shrink-0 text-faint" />
+					</a>
 					<a
 						href={HERO.github}
 						target="_blank"
@@ -94,11 +101,7 @@ const ProfileCard = () => (
 );
 
 export const Hero = () => (
-	<section
-		id="about"
-		className="relative scroll-mt-20 overflow-x-clip"
-		aria-labelledby="hero-title"
-	>
+	<section id="about" className="relative scroll-mt-20 overflow-x-clip">
 		<div className="shell grid items-center gap-10 pt-12 pb-6 sm:pt-16 sm:pb-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:gap-16 lg:pt-20 lg:pb-10">
 			<Reveal className="min-w-0">
 				{HERO.available && (
@@ -117,41 +120,36 @@ export const Hero = () => (
 
 				<p className="mt-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-faint sm:text-[11.5px] sm:tracking-[0.16em]">
 					{HERO.role}
-					<span
-						aria-hidden="true"
-						className="mx-2 hidden text-line-strong sm:inline"
-					>
+					<span aria-hidden="true" className="mx-2 text-line-strong">
 						·
 					</span>
-					<span className="hidden sm:inline">Backend &amp; microservices</span>
+					Backend &amp; full-stack
 				</p>
 
-				<p className="mt-5 max-w-[56ch] text-[15px] leading-7 text-muted sm:mt-6 sm:text-base sm:leading-8">
+				<p className="mt-5 max-w-[52ch] text-[15px] leading-7 text-muted sm:mt-6 sm:text-base sm:leading-8">
 					{HERO.bio}
 				</p>
 
 				<div className="mt-8 flex flex-wrap items-center gap-3">
 					<a href="#projects" className="btn btn-primary w-full sm:w-auto">
-						View my work
+						View work
 						<ArrowRight className="h-4 w-4" />
+					</a>
+					<a
+						href={`mailto:${HERO.email}`}
+						className="btn btn-ghost flex-1 sm:flex-none"
+					>
+						<Mail className="h-4 w-4" />
+						Email me
 					</a>
 					<a
 						href={HERO.github}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="btn btn-ghost flex-1 sm:flex-none"
+						className="icon-btn"
+						aria-label="GitHub profile"
 					>
 						<FaGithub className="h-4 w-4" />
-						GitHub
-					</a>
-					<a
-						href={HERO.linkedin}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="icon-btn"
-						aria-label="LinkedIn profile"
-					>
-						<FaLinkedin className="h-4 w-4" />
 					</a>
 				</div>
 
@@ -164,7 +162,7 @@ export const Hero = () => (
 						aria-hidden="true"
 						className="hidden h-3 w-px bg-line sm:block"
 					/>
-					<span>react · typescript · go</span>
+					<span>go · typescript · postgres</span>
 				</p>
 			</Reveal>
 

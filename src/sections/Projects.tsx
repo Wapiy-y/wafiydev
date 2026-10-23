@@ -51,8 +51,8 @@ export const Projects = () => (
 				const href = project.url ?? project.link;
 
 				return (
-					<Reveal key={project.title} delay={index * 0.06}>
-						<article className="card card-hover group flex h-full flex-col overflow-hidden">
+					<Reveal key={project.title} delay={index * 0.06} className="min-w-0">
+						<article className="card card-hover group flex h-full min-w-0 flex-col overflow-hidden">
 							<div className="p-5">
 								<div className="flex items-start justify-between gap-3">
 									<div className="flex items-center gap-2.5">
@@ -90,7 +90,7 @@ export const Projects = () => (
 							</div>
 
 							<div className="mt-auto flex items-center justify-between gap-3 border-t border-line px-5 py-3">
-								<span className="truncate font-mono text-[11px] text-faint">
+								<span className="min-w-0 flex-1 truncate font-mono text-[11px] text-faint">
 									{href ? hostOf(href) : "—"}
 								</span>
 								{href && (
@@ -112,7 +112,7 @@ export const Projects = () => (
 			})}
 
 			{PROJECTS.length % 2 === 1 && (
-				<Reveal delay={PROJECTS.length * 0.06}>
+				<Reveal delay={PROJECTS.length * 0.06} className="min-w-0">
 					<GithubCard />
 				</Reveal>
 			)}

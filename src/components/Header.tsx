@@ -9,7 +9,6 @@ const NAV_ITEMS = [
 	{ id: "stack", label: "Stack" },
 	{ id: "experience", label: "Experience" },
 	{ id: "projects", label: "Projects" },
-	{ id: "writing", label: "Writing" },
 ] as const;
 
 const NAV_IDS = NAV_ITEMS.map((item) => item.id);

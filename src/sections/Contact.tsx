@@ -1,4 +1,4 @@
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { Reveal } from "../components/Reveal";
 import { HERO } from "../data";
@@ -19,7 +19,7 @@ export const Contact = () => (
 
 					<div className="relative max-w-[62ch]">
 						<p className="flex items-center gap-2 font-mono text-[10.5px] uppercase tracking-[0.2em] text-faint">
-							<span className="text-accent">05</span>
+							<span className="text-accent">04</span>
 							<span aria-hidden="true" className="text-line-strong">
 								/
 							</span>
@@ -27,24 +27,29 @@ export const Contact = () => (
 						</p>
 
 						<h2 className="mt-3 text-[clamp(1.6rem,4vw,2.35rem)] font-semibold tracking-[-0.025em] text-fg">
-							Let&apos;s build something.
+							Let&apos;s talk.
 						</h2>
 
 						<p className="mt-3 text-[14px] leading-7 text-muted sm:text-[15px]">
-							I&apos;m currently open to backend and full-stack roles. The
-							fastest way to reach me is on LinkedIn — or browse the code on
-							GitHub.
+							Open to backend and full-stack roles. Email is best.
 						</p>
 
 						<div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
 							<a
+								href={`mailto:${HERO.email}`}
+								className="btn btn-primary w-full sm:w-auto"
+							>
+								<Mail className="h-4 w-4" />
+								Email me
+							</a>
+							<a
 								href={HERO.linkedin}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="btn btn-primary w-full sm:w-auto"
+								className="btn btn-ghost w-full sm:w-auto"
 							>
 								<FaLinkedin className="h-4 w-4" />
-								Connect on LinkedIn
+								LinkedIn
 							</a>
 							<a
 								href={HERO.github}
@@ -53,8 +58,7 @@ export const Contact = () => (
 								className="btn btn-ghost w-full sm:w-auto"
 							>
 								<FaGithub className="h-4 w-4" />
-								View GitHub
-								<ArrowUpRight className="h-3.5 w-3.5" />
+								GitHub
 							</a>
 						</div>
 

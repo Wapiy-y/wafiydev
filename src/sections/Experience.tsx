@@ -1,9 +1,9 @@
 import { Reveal } from "../components/Reveal";
 import { Section } from "../components/Section";
-import { EXPERIENCES } from "../data";
+import { CERTIFICATIONS, EDUCATION, EXPERIENCES } from "../data";
 
 export const Experience = () => (
-	<Section id="experience" index="02" kicker="career" title="Experience">
+	<Section id="experience" index="02" kicker="work" title="Experience">
 		<ol className="space-y-3.5 sm:space-y-4">
 			{EXPERIENCES.map((experience, index) => {
 				const isLast = index === EXPERIENCES.length - 1;
@@ -27,7 +27,11 @@ export const Experience = () => (
 
 						<Reveal delay={index * 0.06}>
 							<article className="card card-hover p-4 sm:p-5">
-								<div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
+								<div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+									{/* date first on phones, right-aligned from sm up */}
+									<span className="tag w-fit shrink-0 sm:order-last">
+										{experience.period}
+									</span>
 									<div className="min-w-0">
 										<h3 className="text-[15px] font-semibold tracking-tight text-fg">
 											{experience.role}
@@ -36,14 +40,22 @@ export const Experience = () => (
 											{experience.company}
 										</p>
 									</div>
-									<span className="tag shrink-0 sm:ml-auto">
-										{experience.period}
-									</span>
 								</div>
 
-								<p className="mt-3 text-[13.5px] leading-relaxed text-muted">
-									{experience.description}
-								</p>
+								<ul className="mt-3 space-y-1.5">
+									{experience.points.map((point) => (
+										<li
+											key={point}
+											className="flex gap-2.5 text-[13.5px] leading-relaxed text-muted"
+										>
+											<span
+												aria-hidden="true"
+												className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent/70"
+											/>
+											{point}
+										</li>
+									))}
+								</ul>
 
 								<ul className="mt-4 flex flex-wrap gap-1.5">
 									{experience.tags.map((tag) => (
@@ -58,5 +70,31 @@ export const Experience = () => (
 				);
 			})}
 		</ol>
+
+		<Reveal>
+			<div className="mt-8">
+				<p className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-faint">
+					Education
+				</p>
+
+				<div className="mt-3 grid gap-3 sm:grid-cols-2">
+					{EDUCATION.map((item) => (
+						<div key={item.degree} className="card p-4">
+							<p className="text-[13.5px] font-medium text-fg">{item.degree}</p>
+							<p className="mt-1 font-mono text-[11.5px] text-faint">
+								{item.school} · {item.period}
+							</p>
+							<p className="mt-2 font-mono text-[11px] text-accent">
+								{item.note}
+							</p>
+						</div>
+					))}
+				</div>
+
+				<p className="mt-3 font-mono text-[11px] text-faint">
+					Certs · {CERTIFICATIONS.join(" · ")}
+				</p>
+			</div>
+		</Reveal>
 	</Section>
 );

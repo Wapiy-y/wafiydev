@@ -34,7 +34,7 @@ npm run dev      # http://localhost:5173
 
 ```
 src/
-  sections/     # Hero, Stack, Experience, Projects, Writing, Contact
+  sections/     # Hero, Stack (skills), Experience (work + education), Projects, Contact
   components/   # Header, Footer, Section, Reveal
   hooks/        # theme, scroll spy, scroll progress
   data/         # data.json — all copy and content lives here
@@ -42,4 +42,4 @@ src/
 ```
 
 All page content comes from `src/data/data.json`, so the UI can be updated
-without touching components.
+without touching components. Copy is kept to short, one-line points.

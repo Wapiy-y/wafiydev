@@ -8,6 +8,7 @@ export interface Hero {
 	available: boolean;
 	availabilityText: string;
 	bio: string;
+	email: string;
 	github: string;
 	linkedin: string;
 }
@@ -31,13 +32,13 @@ export interface Experience {
 	company: string;
 	role: string;
 	period: string;
-	description: string;
+	points: string[];
 	tags: string[];
 }
 
-export interface Blog {
-	title: string;
-	date: string;
-	excerpt: string;
-	link: string;
+export interface Education {
+	degree: string;
+	school: string;
+	period: string;
+	note: string;
 }

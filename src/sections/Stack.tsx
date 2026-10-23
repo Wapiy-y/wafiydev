@@ -1,12 +1,17 @@
 import type { ComponentType, CSSProperties } from "react";
+import { FaAws } from "react-icons/fa6";
 import {
 	SiDocker,
-	SiExpress,
+	SiGithubactions,
 	SiGo,
+	SiGooglecloud,
+	SiKubernetes,
+	SiNextdotjs,
 	SiNodedotjs,
 	SiPostgresql,
 	SiReact,
 	SiRedis,
+	SiSharp,
 	SiTailwindcss,
 	SiTypescript,
 } from "react-icons/si";
@@ -21,36 +26,43 @@ type IconComponent = ComponentType<{
 }>;
 
 const TECH_ICONS: Record<string, IconComponent> = {
-	TypeScript: SiTypescript,
 	Go: SiGo,
-	React: SiReact,
-	"Tailwind CSS": SiTailwindcss,
-	"Node.js": SiNodedotjs,
-	"Express.js": SiExpress,
+	TypeScript: SiTypescript,
+	"C#": SiSharp,
 	PostgreSQL: SiPostgresql,
 	Redis: SiRedis,
+	"Node.js": SiNodedotjs,
+	React: SiReact,
+	"Next.js": SiNextdotjs,
+	"Tailwind CSS": SiTailwindcss,
 	Docker: SiDocker,
+	Kubernetes: SiKubernetes,
+	AWS: FaAws,
+	GCP: SiGooglecloud,
+	"GitHub Actions": SiGithubactions,
 };
 
 const TECH_COLORS: Record<string, string> = {
-	TypeScript: "#3178c6",
 	Go: "#00add8",
-	React: "#61dafb",
-	"Tailwind CSS": "#38bdf8",
-	"Node.js": "#6cc24a",
-	"Express.js": "#a6adc8",
+	TypeScript: "#3178c6",
+	"C#": "#68217a",
+	gRPC: "#2f9e8f",
+	REST: "#8fbf7f",
 	PostgreSQL: "#336791",
 	Redis: "#ff4438",
+	NATS: "#27aae1",
+	"Node.js": "#6cc24a",
+	React: "#61dafb",
+	"Next.js": "#e5e5e5",
+	"Tailwind CSS": "#38bdf8",
 	Docker: "#2496ed",
+	Kubernetes: "#326ce5",
+	AWS: "#ff9900",
+	GCP: "#4285f4",
+	"GitHub Actions": "#2088ff",
 };
 
-const CATEGORY_ORDER = [
-	"Language",
-	"Frontend",
-	"Backend",
-	"Database",
-	"DevOps",
-];
+const CATEGORY_ORDER = ["Language", "Backend", "Frontend", "Cloud"];
 
 const groupByCategory = (stack: TechStack[]) => {
 	const groups = new Map<string, TechStack[]>();
@@ -72,7 +84,7 @@ export const Stack = () => {
 	const groups = groupByCategory(TECH_STACK);
 
 	return (
-		<Section id="stack" index="01" kicker="toolkit" title="Tech stack">
+		<Section id="stack" index="01" kicker="stack" title="Skills">
 			<Reveal>
 				<div className="card divide-y divide-line overflow-hidden">
 					{groups.map(([category, items]) => (
