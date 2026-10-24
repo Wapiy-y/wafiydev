@@ -1,11 +1,9 @@
 export const Footer = () => (
-	<footer className="border-t border-line">
-		<div className="shell flex flex-col items-center justify-center gap-2 py-6 text-[12.5px] text-soft sm:flex-row sm:gap-3">
+	<footer className="shell pb-10">
+		<div className="mx-auto flex max-w-[620px] items-center justify-center gap-2.5 border-t border-line pt-6 text-[12.5px] text-soft">
 			<p>© {new Date().getFullYear()} Wafiy</p>
-			<p aria-hidden="true" className="hidden sm:block">
-				·
-			</p>
-			<p>Built with React, TypeScript &amp; Tailwind CSS</p>
+			<span aria-hidden="true">/</span>
+			<p>Built with React &amp; Tailwind CSS</p>
 		</div>
 	</footer>
 );

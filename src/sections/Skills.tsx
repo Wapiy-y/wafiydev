@@ -1,9 +1,14 @@
-import { Reveal } from "../components/Reveal";
-import { Section } from "../components/Section";
 import { TECH_STACK } from "../data";
 import type { TechStack } from "../types";
 
 const CATEGORY_ORDER = ["Language", "Backend", "Frontend", "Cloud"];
+
+const CATEGORY_LABEL: Record<string, string> = {
+	Language: "Languages",
+	Backend: "Backend",
+	Frontend: "Frontend",
+	Cloud: "Cloud",
+};
 
 const groupByCategory = (stack: TechStack[]) => {
 	const groups = new Map<string, TechStack[]>();
@@ -25,25 +30,25 @@ export const Skills = () => {
 	const groups = groupByCategory(TECH_STACK);
 
 	return (
-		<Section id="skills" title="Skills">
-			<Reveal>
-				<div className="space-y-7">
+		<section id="skills" className="shell pb-14 sm:pb-20">
+			<div className="mx-auto max-w-[620px]">
+				<h2 className="text-[16px] font-semibold text-ink sm:text-[16.5px]">
+					Tools I reach for:
+				</h2>
+
+				<div className="mt-5 space-y-3 text-[15.5px] leading-[1.7]">
 					{groups.map(([category, items]) => (
-						<div key={category}>
-							<p className="text-[11.5px] tracking-[0.08em] text-soft uppercase">
-								{category}
-							</p>
-							<div className="mt-2.5 flex flex-wrap justify-center gap-1.5">
-								{items.map((tech) => (
-									<span key={tech.name} className="chip">
-										{tech.name}
-									</span>
-								))}
-							</div>
-						</div>
+						<p key={category}>
+							<span className="text-soft">
+								{CATEGORY_LABEL[category] ?? category} —{" "}
+							</span>
+							<span className="text-body">
+								{items.map((tech) => tech.name).join(", ")}.
+							</span>
+						</p>
 					))}
 				</div>
-			</Reveal>
-		</Section>
+			</div>
+		</section>
 	);
 };

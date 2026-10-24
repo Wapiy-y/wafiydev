@@ -2,98 +2,51 @@
 	"hero": {
 		"name": "Wafiy",
 		"avatar": "https://i.ibb.co/k6xDtqF9/profile.jpg",
-		"tagline": "Hi, I go by Wafiy!",
-		"role": "Software Engineer",
+		"greeting": "Hello, fellow digital traveler.",
+		"intro": [
+			"I'm Wafiy — or @Wapiy-y, if you've seen me online.",
+			"A son, a brother, and a friend.",
+			"A software engineer from Kuala Lumpur, Malaysia.",
+			"A backend builder, a small-tool maker, and a lifelong learner.",
+			"When I'm not writing code, I'm shipping side projects or reading."
+		],
 		"location": "Kuala Lumpur",
-		"years": "2+",
 		"available": true,
 		"availabilityText": "Open to work",
-		"bio": "I build backends and web apps. I like small, clean systems.",
 		"email": "abdullahwafiy.work@gmail.com",
 		"github": "https://github.com/Wapiy-y",
 		"linkedin": "https://www.linkedin.com/in/abdullahwafiy/"
 	},
 	"techStack": [
-		{
-			"name": "Go",
-			"category": "Language"
-		},
-		{
-			"name": "TypeScript",
-			"category": "Language"
-		},
-		{
-			"name": "C#",
-			"category": "Language"
-		},
-		{
-			"name": "gRPC",
-			"category": "Backend"
-		},
-		{
-			"name": "REST",
-			"category": "Backend"
-		},
-		{
-			"name": "PostgreSQL",
-			"category": "Backend"
-		},
-		{
-			"name": "Redis",
-			"category": "Backend"
-		},
-		{
-			"name": "NATS",
-			"category": "Backend"
-		},
-		{
-			"name": "Node.js",
-			"category": "Backend"
-		},
-		{
-			"name": "React",
-			"category": "Frontend"
-		},
-		{
-			"name": "Next.js",
-			"category": "Frontend"
-		},
-		{
-			"name": "Tailwind CSS",
-			"category": "Frontend"
-		},
-		{
-			"name": "Docker",
-			"category": "Cloud"
-		},
-		{
-			"name": "Kubernetes",
-			"category": "Cloud"
-		},
-		{
-			"name": "AWS",
-			"category": "Cloud"
-		},
-		{
-			"name": "GCP",
-			"category": "Cloud"
-		},
-		{
-			"name": "GitHub Actions",
-			"category": "Cloud"
-		}
+		{ "name": "Go", "category": "Language" },
+		{ "name": "TypeScript", "category": "Language" },
+		{ "name": "C#", "category": "Language" },
+		{ "name": "gRPC", "category": "Backend" },
+		{ "name": "REST", "category": "Backend" },
+		{ "name": "PostgreSQL", "category": "Backend" },
+		{ "name": "Redis", "category": "Backend" },
+		{ "name": "NATS", "category": "Backend" },
+		{ "name": "Node.js", "category": "Backend" },
+		{ "name": "React", "category": "Frontend" },
+		{ "name": "Next.js", "category": "Frontend" },
+		{ "name": "Tailwind CSS", "category": "Frontend" },
+		{ "name": "Docker", "category": "Cloud" },
+		{ "name": "Kubernetes", "category": "Cloud" },
+		{ "name": "AWS", "category": "Cloud" },
+		{ "name": "GCP", "category": "Cloud" },
+		{ "name": "GitHub Actions", "category": "Cloud" }
 	],
 	"projects": [
 		{
 			"title": "Bilku",
-			"description": "Bill tracker PWA. Still my daily tool.",
+			"description": "A bill tracker PWA. Still my daily tool.",
 			"tags": ["React", "TypeScript", "Workers", "PostgreSQL"],
 			"inDevelopment": false,
 			"url": "https://bilku.wafiydev.site/"
 		},
 		{
 			"title": "P-Massage",
-			"description": "Site for a massage therapist, with client feedback.",
+			"description": "A site for a massage therapist, with client feedback built in.",
 			"tags": ["Workers", "Hono", "D1", "Turnstile"],
 			"inDevelopment": false,
 			"url": "https://massage.wafiyabdullah39.workers.dev/"
