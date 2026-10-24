@@ -1,8 +1,6 @@
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Contact } from "./sections/Contact";
-import { Education } from "./sections/Education";
-import { Experience } from "./sections/Experience";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { Skills } from "./sections/Skills";
@@ -18,10 +16,8 @@ export default function App() {
 
 			<main id="main">
 				<Hero />
-				<Experience />
 				<Projects />
 				<Skills />
-				<Education />
 				<Contact />
 			</main>
 

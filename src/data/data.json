@@ -14,76 +14,97 @@
 		"linkedin": "https://www.linkedin.com/in/abdullahwafiy/"
 	},
 	"techStack": [
-		{ "name": "Go", "category": "Language" },
-		{ "name": "TypeScript", "category": "Language" },
-		{ "name": "C#", "category": "Language" },
-		{ "name": "gRPC", "category": "Backend" },
-		{ "name": "REST", "category": "Backend" },
-		{ "name": "PostgreSQL", "category": "Backend" },
-		{ "name": "Redis", "category": "Backend" },
-		{ "name": "NATS", "category": "Backend" },
-		{ "name": "Node.js", "category": "Backend" },
-		{ "name": "React", "category": "Frontend" },
-		{ "name": "Next.js", "category": "Frontend" },
-		{ "name": "Tailwind CSS", "category": "Frontend" },
-		{ "name": "Docker", "category": "Cloud" },
-		{ "name": "Kubernetes", "category": "Cloud" },
-		{ "name": "AWS", "category": "Cloud" },
-		{ "name": "GCP", "category": "Cloud" },
-		{ "name": "GitHub Actions", "category": "Cloud" }
-	],
-	"experiences": [
 		{
-			"company": "Revolab Sdn Bhd",
-			"role": "Junior Software Engineer",
-			"period": "Apr 2025 – Now",
-			"points": [
-				"Built billing: plans, credits, top-ups.",
-				"Shipped a tamper-proof audit log.",
-				"Added WhatsApp and web chat for AI agents.",
-				"Built bank transfers in chat for a MENA bank.",
-				"Ran releases, on-call and code review."
-			],
-			"tags": ["Go", "TypeScript", "gRPC", "GCP", "Docker"]
+			"name": "Go",
+			"category": "Language"
 		},
 		{
-			"company": "Agtiv Consulting Sdn Bhd",
-			"role": "Full-Stack Developer Intern",
-			"period": "Sep 2024 – Feb 2025",
-			"points": [
-				"Built change-request modules in ASP.NET and SharePoint.",
-				"Helped move files from EDMS to EDCS."
-			],
-			"tags": ["C#", "ASP.NET", "SharePoint"]
-		}
-	],
-	"education": [
-		{
-			"degree": "BSc Computer Science (Hons.)",
-			"school": "UiTM Shah Alam",
-			"period": "2021 – 2025",
-			"note": "CGPA 3.57 · First Class"
+			"name": "TypeScript",
+			"category": "Language"
 		},
 		{
-			"degree": "Foundation in Engineering",
-			"school": "UiTM Dengkil",
-			"period": "2020 – 2021",
-			"note": "CGPA 3.72"
+			"name": "C#",
+			"category": "Language"
+		},
+		{
+			"name": "gRPC",
+			"category": "Backend"
+		},
+		{
+			"name": "REST",
+			"category": "Backend"
+		},
+		{
+			"name": "PostgreSQL",
+			"category": "Backend"
+		},
+		{
+			"name": "Redis",
+			"category": "Backend"
+		},
+		{
+			"name": "NATS",
+			"category": "Backend"
+		},
+		{
+			"name": "Node.js",
+			"category": "Backend"
+		},
+		{
+			"name": "React",
+			"category": "Frontend"
+		},
+		{
+			"name": "Next.js",
+			"category": "Frontend"
+		},
+		{
+			"name": "Tailwind CSS",
+			"category": "Frontend"
+		},
+		{
+			"name": "Docker",
+			"category": "Cloud"
+		},
+		{
+			"name": "Kubernetes",
+			"category": "Cloud"
+		},
+		{
+			"name": "AWS",
+			"category": "Cloud"
+		},
+		{
+			"name": "GCP",
+			"category": "Cloud"
+		},
+		{
+			"name": "GitHub Actions",
+			"category": "Cloud"
 		}
 	],
-	"certifications": ["AWS Cloud Practitioner", "Google Cloud Fundamentals"],
 	"projects": [
 		{
 			"title": "Bilku",
 			"description": "Bill tracker PWA. Still my daily tool.",
-			"tags": ["React", "TypeScript", "Workers", "PostgreSQL"],
+			"tags": [
+				"React",
+				"TypeScript",
+				"Workers",
+				"PostgreSQL"
+			],
 			"inDevelopment": false,
 			"url": "https://bilku.wafiydev.site/"
 		},
 		{
 			"title": "P-Massage",
 			"description": "Site for a massage therapist, with client feedback.",
-			"tags": ["Workers", "Hono", "D1", "Turnstile"],
+			"tags": [
+				"Workers",
+				"Hono",
+				"D1",
+				"Turnstile"
+			],
 			"inDevelopment": false,
 			"url": "https://massage.wafiyabdullah39.workers.dev/"
 		}

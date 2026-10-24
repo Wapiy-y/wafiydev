@@ -27,18 +27,3 @@ export interface Project {
 	image?: string;
 	inDevelopment?: boolean;
 }
-
-export interface Experience {
-	company: string;
-	role: string;
-	period: string;
-	points: string[];
-	tags: string[];
-}
-
-export interface Education {
-	degree: string;
-	school: string;
-	period: string;
-	note: string;
-}

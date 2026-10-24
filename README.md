@@ -34,7 +34,7 @@ npm run dev      # http://localhost:5173
 
 ```
 src/
-  sections/     # Hero, Experience, Projects, Skills, Education, Contact
+  sections/     # Hero (intro), Projects, Skills, Contact
   components/   # Header, Footer, Section, Reveal
   hooks/        # scroll spy
   data/         # data.json — all copy and content lives here

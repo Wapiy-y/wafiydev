@@ -3,10 +3,8 @@ import { useEffect, useState } from "react";
 import { useScrollSpy } from "../hooks/useScrollSpy";
 
 const NAV_ITEMS = [
-	{ id: "experience", label: "Experience" },
 	{ id: "projects", label: "Projects" },
 	{ id: "skills", label: "Skills" },
-	{ id: "education", label: "Education" },
 	{ id: "contact", label: "Contact" },
 ] as const;
 
