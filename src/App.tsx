@@ -1,20 +1,31 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
-import { BlogPage } from "./pages/BlogPage";
-import { HomePage } from "./pages/HomePage";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Contact } from "./sections/Contact";
+import { Education } from "./sections/Education";
+import { Experience } from "./sections/Experience";
+import { Hero } from "./sections/Hero";
+import { Projects } from "./sections/Projects";
+import { Skills } from "./sections/Skills";
 
 export default function App() {
 	return (
-		<BrowserRouter>
-			<div className="min-h-screen font-sans flex flex-col">
-				<Navbar />
-				<div className="flex-1">
-					<Routes>
-						<Route path="/" element={<HomePage />} />
-						<Route path="/blog" element={<BlogPage />} />
-					</Routes>
-				</div>
-			</div>
-		</BrowserRouter>
+		<div id="top" className="relative min-h-screen">
+			<a href="#main" className="skip-link">
+				Skip to content
+			</a>
+
+			<Header />
+
+			<main id="main">
+				<Hero />
+				<Experience />
+				<Projects />
+				<Skills />
+				<Education />
+				<Contact />
+			</main>
+
+			<Footer />
+		</div>
 	);
 }

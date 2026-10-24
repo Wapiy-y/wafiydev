@@ -3,47 +3,89 @@
 		"name": "Wafiy",
 		"avatar": "https://i.ibb.co/k6xDtqF9/profile.jpg",
 		"tagline": "Hi, I go by Wafiy!",
+		"role": "Software Engineer",
+		"location": "Kuala Lumpur",
+		"years": "2+",
 		"available": true,
-		"availabilityText": "Open to opportunities",
-		"bio": "Junior Software Engineer with 1.5 years building production-grade full-stack apps, focused on backend and microservices. I enjoy shipping clean, reliable software — from REST APIs to real-time AI systems.",
+		"availabilityText": "Open to work",
+		"bio": "I build backends and web apps. I like small, clean systems.",
+		"email": "abdullahwafiy.work@gmail.com",
 		"github": "https://github.com/Wapiy-y",
 		"linkedin": "https://www.linkedin.com/in/abdullahwafiy/"
 	},
 	"techStack": [
-		{ "name": "TypeScript", "category": "Language" },
 		{ "name": "Go", "category": "Language" },
-		{ "name": "React", "category": "Frontend" },
-		{ "name": "Tailwind CSS", "category": "Frontend" },
+		{ "name": "TypeScript", "category": "Language" },
+		{ "name": "C#", "category": "Language" },
+		{ "name": "gRPC", "category": "Backend" },
+		{ "name": "REST", "category": "Backend" },
+		{ "name": "PostgreSQL", "category": "Backend" },
+		{ "name": "Redis", "category": "Backend" },
+		{ "name": "NATS", "category": "Backend" },
 		{ "name": "Node.js", "category": "Backend" },
-		{ "name": "Express.js", "category": "Backend" },
-		{ "name": "PostgreSQL", "category": "Database" },
-		{ "name": "Redis", "category": "Database" },
-		{ "name": "Docker", "category": "DevOps" }
+		{ "name": "React", "category": "Frontend" },
+		{ "name": "Next.js", "category": "Frontend" },
+		{ "name": "Tailwind CSS", "category": "Frontend" },
+		{ "name": "Docker", "category": "Cloud" },
+		{ "name": "Kubernetes", "category": "Cloud" },
+		{ "name": "AWS", "category": "Cloud" },
+		{ "name": "GCP", "category": "Cloud" },
+		{ "name": "GitHub Actions", "category": "Cloud" }
 	],
 	"experiences": [
 		{
 			"company": "Revolab Sdn Bhd",
 			"role": "Junior Software Engineer",
-			"period": "APR 2025 - PRESENT",
-			"description": "Building production microservices for AI-powered conversational agent",
-			"tags": ["TypeScript", "Go", "gRPC", "GCP", "OpenTelemetry"]
+			"period": "Apr 2025 – Now",
+			"points": [
+				"Built billing: plans, credits, top-ups.",
+				"Shipped a tamper-proof audit log.",
+				"Added WhatsApp and web chat for AI agents.",
+				"Built bank transfers in chat for a MENA bank.",
+				"Ran releases, on-call and code review."
+			],
+			"tags": ["Go", "TypeScript", "gRPC", "GCP", "Docker"]
 		},
 		{
 			"company": "Agtiv Consulting Sdn Bhd",
 			"role": "Full-Stack Developer Intern",
-			"period": "SEPT 2024 - FEB 2025",
-			"description": "Built internal modules for an EPC client's Management of Change system and contributed to a document management migration from EDMS to EDCS.",
-			"tags": ["ASP.NET", "C#", "SharePoint"]
+			"period": "Sep 2024 – Feb 2025",
+			"points": [
+				"Built change-request modules in ASP.NET and SharePoint.",
+				"Helped move files from EDMS to EDCS."
+			],
+			"tags": ["C#", "ASP.NET", "SharePoint"]
 		}
 	],
+	"education": [
+		{
+			"degree": "BSc Computer Science (Hons.)",
+			"school": "UiTM Shah Alam",
+			"period": "2021 – 2025",
+			"note": "CGPA 3.57 · First Class"
+		},
+		{
+			"degree": "Foundation in Engineering",
+			"school": "UiTM Dengkil",
+			"period": "2020 – 2021",
+			"note": "CGPA 3.72"
+		}
+	],
+	"certifications": ["AWS Cloud Practitioner", "Google Cloud Fundamentals"],
 	"projects": [
 		{
 			"title": "Bilku",
-			"description": "Personal bill and financial commitment tracker with PWA support for mobile access.",
-			"tags": ["React", "TypeScript", "PostgreSQL", "Netlify"],
+			"description": "Bill tracker PWA. Still my daily tool.",
+			"tags": ["React", "TypeScript", "Workers", "PostgreSQL"],
 			"inDevelopment": false,
 			"url": "https://bilku.wafiydev.site/"
+		},
+		{
+			"title": "P-Massage",
+			"description": "Site for a massage therapist, with client feedback.",
+			"tags": ["Workers", "Hono", "D1", "Turnstile"],
+			"inDevelopment": false,
+			"url": "https://massage.wafiyabdullah39.workers.dev/"
 		}
-	],
-	"blogs": []
+	]
 }
