@@ -32,7 +32,7 @@ export const Hero = () => (
 				{HERO.availabilityText} · {HERO.location}
 			</p>
 
-			<div className="mt-6 flex items-center justify-center gap-2.5">
+			<div className="mt-6 flex items-center justify-center gap-3">
 				<a
 					href={HERO.github}
 					target="_blank"

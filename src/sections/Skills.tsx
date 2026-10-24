@@ -27,7 +27,7 @@ export const Skills = () => {
 	return (
 		<Section id="skills" title="Skills">
 			<Reveal>
-				<div className="space-y-6">
+				<div className="space-y-7">
 					{groups.map(([category, items]) => (
 						<div key={category}>
 							<p className="text-[11.5px] tracking-[0.08em] text-soft uppercase">

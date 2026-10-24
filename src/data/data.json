@@ -87,24 +87,14 @@
 		{
 			"title": "Bilku",
 			"description": "Bill tracker PWA. Still my daily tool.",
-			"tags": [
-				"React",
-				"TypeScript",
-				"Workers",
-				"PostgreSQL"
-			],
+			"tags": ["React", "TypeScript", "Workers", "PostgreSQL"],
 			"inDevelopment": false,
 			"url": "https://bilku.wafiydev.site/"
 		},
 		{
 			"title": "P-Massage",
 			"description": "Site for a massage therapist, with client feedback.",
-			"tags": [
-				"Workers",
-				"Hono",
-				"D1",
-				"Turnstile"
-			],
+			"tags": ["Workers", "Hono", "D1", "Turnstile"],
 			"inDevelopment": false,
 			"url": "https://massage.wafiyabdullah39.workers.dev/"
 		}

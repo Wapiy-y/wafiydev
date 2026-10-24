@@ -17,34 +17,36 @@ export const Contact = () => (
 				Open to backend and full-stack roles. Email is best.
 			</p>
 
-			<div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+			<div className="mt-6 flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-6">
 				<a
 					href={`mailto:${HERO.email}`}
-					className="inline-flex h-11 items-center gap-2 rounded-xl bg-ink px-5 text-[14px] font-medium text-white transition-opacity hover:opacity-90"
+					className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-ink px-5 text-[14px] font-medium text-white transition-opacity hover:opacity-90 sm:w-auto"
 				>
 					<Mail className="h-4 w-4" />
 					Email me
 				</a>
 
-				<a
-					href={HERO.linkedin}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="inline-flex items-center gap-2 text-[14px] text-body transition-colors hover:text-ink"
-				>
-					<FaLinkedin className="h-4 w-4" />
-					LinkedIn
-				</a>
+				<div className="flex items-center gap-6">
+					<a
+						href={HERO.linkedin}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-flex items-center gap-2 text-[14px] text-body transition-colors hover:text-ink"
+					>
+						<FaLinkedin className="h-4 w-4" />
+						LinkedIn
+					</a>
 
-				<a
-					href={HERO.github}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="inline-flex items-center gap-2 text-[14px] text-body transition-colors hover:text-ink"
-				>
-					<FaGithub className="h-4 w-4" />
-					GitHub
-				</a>
+					<a
+						href={HERO.github}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-flex items-center gap-2 text-[14px] text-body transition-colors hover:text-ink"
+					>
+						<FaGithub className="h-4 w-4" />
+						GitHub
+					</a>
+				</div>
 			</div>
 		</Reveal>
 	</section>
