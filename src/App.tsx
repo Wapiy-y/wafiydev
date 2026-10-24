@@ -1,9 +1,7 @@
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { Contact } from "./sections/Contact";
-import { Education } from "./sections/Education";
-import { Experience } from "./sections/Experience";
-import { Hero } from "./sections/Hero";
+import { Connect } from "./sections/Connect";
+import { Intro } from "./sections/Intro";
 import { Projects } from "./sections/Projects";
 import { Skills } from "./sections/Skills";
 
@@ -17,12 +15,10 @@ export default function App() {
 			<Header />
 
 			<main id="main">
-				<Hero />
-				<Experience />
+				<Intro />
 				<Projects />
 				<Skills />
-				<Education />
-				<Contact />
+				<Connect />
 			</main>
 
 			<Footer />

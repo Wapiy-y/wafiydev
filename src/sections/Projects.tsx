@@ -1,49 +1,55 @@
-import { ArrowUpRight } from "lucide-react";
-import { Reveal } from "../components/Reveal";
-import { Section } from "../components/Section";
-import { PROJECTS } from "../data";
+import { HERO, PROJECTS } from "../data";
+
+const link =
+	"font-medium text-accent underline decoration-accent/40 underline-offset-[3px] transition-colors hover:decoration-accent";
 
 export const Projects = () => (
-	<Section id="projects" title="Projects">
-		<ul className="border-t border-line">
-			{PROJECTS.map((project, index) => {
-				const href = project.url ?? project.link;
+	<section id="projects" className="shell pb-14 sm:pb-20">
+		<div className="mx-auto max-w-[620px]">
+			<h2 className="text-[16px] font-semibold text-ink sm:text-[16.5px]">
+				Things I&apos;ve built:
+			</h2>
 
-				return (
-					<li key={project.title} className="border-b border-line">
-						<Reveal delay={index * 0.04}>
-							<a
-								href={href}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="group block py-6"
-							>
-								<p className="text-[15.5px] font-semibold text-ink">
+			<div className="mt-5 space-y-5">
+				{PROJECTS.map((project) => {
+					const href = project.url ?? project.link;
+
+					return (
+						<div key={project.title}>
+							<p className="text-[15.5px] leading-[1.7] text-body">
+								<a
+									href={href}
+									target="_blank"
+									rel="noopener noreferrer"
+									className={link}
+								>
 									{project.title}
-									{project.inDevelopment && (
-										<span className="chip ml-2 align-middle text-[11px]">
-											WIP
-										</span>
-									)}
-								</p>
+								</a>
+								<span className="text-soft"> — </span>
+								{project.description}
+								{project.inDevelopment && (
+									<span className="text-soft"> (in progress)</span>
+								)}
+							</p>
+							<p className="mt-1 text-[13px] text-soft">
+								{project.tags.join(" · ")}
+							</p>
+						</div>
+					);
+				})}
 
-								<p className="mx-auto mt-1.5 max-w-[52ch] text-[13.5px] leading-relaxed text-body">
-									{project.description}
-								</p>
-
-								<p className="mt-2 text-[12px] text-soft">
-									{project.tags.join(" · ")}
-								</p>
-
-								<p className="mt-3 inline-flex items-center gap-1.5 text-[12.5px] font-medium text-accent">
-									Visit
-									<ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-								</p>
-							</a>
-						</Reveal>
-					</li>
-				);
-			})}
-		</ul>
-	</Section>
+				<p className="text-[15.5px] leading-[1.7] text-body">
+					<a
+						href={HERO.github}
+						target="_blank"
+						rel="noopener noreferrer"
+						className={link}
+					>
+						More on GitHub
+					</a>
+					<span className="text-soft"> — smaller tools and experiments.</span>
+				</p>
+			</div>
+		</div>
+	</section>
 );

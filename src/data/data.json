@@ -2,13 +2,17 @@
 	"hero": {
 		"name": "Wafiy",
 		"avatar": "https://i.ibb.co/k6xDtqF9/profile.jpg",
-		"tagline": "Hi, I go by Wafiy!",
-		"role": "Software Engineer",
+		"greeting": "Hello, fellow digital traveler.",
+		"intro": [
+			"I'm Wafiy — or @Wapiy-y, if you've seen me online.",
+			"A son, a brother, and a friend.",
+			"A software engineer from Kuala Lumpur, Malaysia.",
+			"A backend builder, a small-tool maker, and a lifelong learner.",
+			"When I'm not writing code, I'm shipping side projects or reading."
+		],
 		"location": "Kuala Lumpur",
-		"years": "2+",
 		"available": true,
 		"availabilityText": "Open to work",
-		"bio": "I build backends and web apps. I like small, clean systems.",
 		"email": "abdullahwafiy.work@gmail.com",
 		"github": "https://github.com/Wapiy-y",
 		"linkedin": "https://www.linkedin.com/in/abdullahwafiy/"
@@ -32,57 +36,17 @@
 		{ "name": "GCP", "category": "Cloud" },
 		{ "name": "GitHub Actions", "category": "Cloud" }
 	],
-	"experiences": [
-		{
-			"company": "Revolab Sdn Bhd",
-			"role": "Junior Software Engineer",
-			"period": "Apr 2025 – Now",
-			"points": [
-				"Built billing: plans, credits, top-ups.",
-				"Shipped a tamper-proof audit log.",
-				"Added WhatsApp and web chat for AI agents.",
-				"Built bank transfers in chat for a MENA bank.",
-				"Ran releases, on-call and code review."
-			],
-			"tags": ["Go", "TypeScript", "gRPC", "GCP", "Docker"]
-		},
-		{
-			"company": "Agtiv Consulting Sdn Bhd",
-			"role": "Full-Stack Developer Intern",
-			"period": "Sep 2024 – Feb 2025",
-			"points": [
-				"Built change-request modules in ASP.NET and SharePoint.",
-				"Helped move files from EDMS to EDCS."
-			],
-			"tags": ["C#", "ASP.NET", "SharePoint"]
-		}
-	],
-	"education": [
-		{
-			"degree": "BSc Computer Science (Hons.)",
-			"school": "UiTM Shah Alam",
-			"period": "2021 – 2025",
-			"note": "CGPA 3.57 · First Class"
-		},
-		{
-			"degree": "Foundation in Engineering",
-			"school": "UiTM Dengkil",
-			"period": "2020 – 2021",
-			"note": "CGPA 3.72"
-		}
-	],
-	"certifications": ["AWS Cloud Practitioner", "Google Cloud Fundamentals"],
 	"projects": [
 		{
 			"title": "Bilku",
-			"description": "Bill tracker PWA. Still my daily tool.",
+			"description": "A bill tracker PWA. Still my daily tool.",
 			"tags": ["React", "TypeScript", "Workers", "PostgreSQL"],
 			"inDevelopment": false,
 			"url": "https://bilku.wafiydev.site/"
 		},
 		{
 			"title": "P-Massage",
-			"description": "Site for a massage therapist, with client feedback.",
+			"description": "A site for a massage therapist, with client feedback built in.",
 			"tags": ["Workers", "Hono", "D1", "Turnstile"],
 			"inDevelopment": false,
 			"url": "https://massage.wafiyabdullah39.workers.dev/"

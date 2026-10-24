@@ -10,7 +10,6 @@ typography-led layout tuned from 320px phones up to wide desktops.
 - React 19 + TypeScript
 - Vite 8
 - Tailwind CSS v4 (design tokens in `src/index.css`)
-- Motion for scroll reveals, Lucide / Simple Icons for iconography
 - Biome (format + lint) and ESLint 9
 
 ## Development
@@ -34,9 +33,8 @@ npm run dev      # http://localhost:5173
 
 ```
 src/
-  sections/     # Hero, Experience, Projects, Skills, Education, Contact
-  components/   # Header, Footer, Section, Reveal
-  hooks/        # scroll spy
+  sections/     # Intro, Projects, Skills, Connect
+  components/   # Header, Footer
   data/         # data.json — all copy and content lives here
   types/        # content types
 ```
