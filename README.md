@@ -41,3 +41,23 @@ src/
 
 All page content comes from `src/data/data.json`, so the UI can be updated
 without touching components. Copy is kept to short, one-line points.
+
+## Writing
+
+Posts are plain markdown files in `content/posts/`. Each file starts with a
+small header block:
+
+```markdown
+---
+title: My post
+date: 2026-10-24
+summary: One line about it.
+---
+
+Body goes here.
+```
+
+Commit the file and the site rebuilds. Routes are hash-based, so no server or
+rewrite rules are needed: `/#/blog` lists every post, `/#/blog/<slug>` shows
+one. There is no database and no admin panel — markdown plus git is the
+whole system.
