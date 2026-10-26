@@ -45,7 +45,7 @@ without touching components. Copy is kept to short, one-line points.
 ## Writing
 
 Posts are plain markdown files in `content/posts/`. Each file starts with a
-small header block:
+small header block (the folder is kept by a `.gitkeep` until the first post):
 
 ```markdown
 ---
