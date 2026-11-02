@@ -33,7 +33,7 @@
 		{ "name": "GCP", "category": "Cloud" },
 		{ "name": "GitHub Actions", "category": "Cloud" },
 		{ "name": "CloudFlare", "category": "Cloud" }, 
-		{ "name": "Netlify", "category": "Cloud" },
+		{ "name": "Netlify", "category": "Cloud" }
 	],
 	"projects": [
 		{
