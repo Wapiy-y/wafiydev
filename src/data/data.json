@@ -6,7 +6,7 @@
 		"intro": [
 			"I'm Wafiy — or @Wapiy-y, if you've seen me online.",
 			"A software engineer from Kuala Lumpur, Malaysia.",
-			"A backend builder and a lifelong learner.",
+			"A backend builder and a lifelong learner."
 		],
 		"location": "Kuala Lumpur",
 		"available": true,
@@ -33,7 +33,7 @@
 		{ "name": "GCP", "category": "Cloud" },
 		{ "name": "GitHub Actions", "category": "Cloud" },
 		{ "name": "CloudFlare", "category": "Cloud" }, 
-		{ "name": "Netlify", "category": "Cloud" },
+		{ "name": "Netlify", "category": "Cloud" }
 	],
 	"projects": [
 		{
